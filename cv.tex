@@ -1,0 +1,141 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[overlapped, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\usepackage[margin=0.5in]{geometry}
+%\usepackage{helvet} % Default font is the helvetica postscript font
+\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+
+%\addtolength{\oddsidemargin}{-.875in}
+%\addtolength{\evensidemargin}{-.875in}
+%\addtolength{\textwidth}{1.75in}
+%
+%\addtolength{\topmargin}{-.875in}
+%\addtolength{\textheight}{1.75in}
+\setlength{\textwidth}{7in} % Text width of the document
+
+\begin{document}
+
+\begin{resume}
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft.5\hoffset\centerline{\large\bf Danny Chen} % Your name at the top
+ 
+    \moveleft\hoffset\vbox{\hrule width 7.5in height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+ 
+\moveleft.5\hoffset\centerline{+1 512 629 0747}
+\moveleft.5\hoffset\centerline{dannychen579@utexas.edu}
+
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+ 
+%\section{OBJECTIVE}  
+%Looking for a job as a software developer. I have a keen interest in cryptography, networking, and algorithms
+%
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{EDUCATION}
+
+
+{\sl Bachelor of Science in Computer Science}  \hfill {\sl 2012-08/2016-05} \\
+University of Texas at Austin
+\\
+Coursework: Operating Systems, Cryptography, Algorithms, Network Security, Artificial Intelligence, Automata Theory, Theory of Computation
+
+ 
+%----------------------------------------------------------------------------------------
+%   TECHNICAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{TECHNICAL SKILLS AND KNOWLEDGE} 
+{\sl Languages:} C, Bash, Python, x86 Assembly, Java, Javascript, Golang, Ruby\\
+{\sl Technologies/Tools:} Amazon EC2, Amazon VPC, Git, Travis CI\\
+{\sl Operating Systems:} Linux
+ 
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{EXPERIENCE}
+
+{\sl Software Development Engineer II} \hfill {\sl 2016-07-05/Present} \\
+EC2 Networking, Amazon Web Services
+\begin{itemize} \itemsep -2pt % Reduce space between items
+    \item Worked as part of a team that performs routing and packet translation for all network traffic going in and out of EC2 worldwide.
+    \item Worked on and maintained a low-level packet processing application written in C.
+    \item Implemented the network security layer for Inter-Region VPC Peering.
+    \item Worked on a 24/7 oncall shift to troubleshoot hardware and software failures in production.
+    \item Designed and oversaw projects to improve operational overhead and alleviate technical debt, often in conjunction with other teams in AWS.
+\end{itemize}
+{\sl Software Development Engineer Intern} \hfill {\sl 2015-07-02/2015-08-28} \\
+Platform Excellence, Amazon.com
+\begin{itemize} \itemsep -2pt % Reduce space between items
+    \item Worked as part of the team that monitors latency on the Amazon.com website.
+    \item Created a data visualization tool for a terabyte-scale Redshift cluster.
+\end{itemize}
+{\sl Software Developer Intern} \hfill {\sl 2014-07-02/2014-08-27} \\
+Software Verification Team for WebSphere Application Server, IBM
+\begin{itemize} \itemsep -2pt % Reduce space between items
+    \item QA and tested IBM WebSphere.
+    \item Wrote scripts to do automated testing of new releases of Websphere.
+\end{itemize}
+ 
+
+%----------------------------------------------------------------------------------------
+%	Personal Side Projects
+%---------------------------------------------------------------------------------------- 
+
+\section{PERSONAL PROJECTS}
+{\sl Minecraft Client} - https://github.com/NosotrosNueces/mcc
+\begin{itemize} \itemsep -2pt % Reduce space between items
+    \item Collaborated with friends to implement the Minecraft Client protocol.
+    \item Provides an API for sending commands to the server like digging and moving.
+    \item Allows for asynchronous handling of messages from the server through user-specified callbacks. Backed by libuv, the same library that handles asynchronous I/O for Node.js.
+    \item Implemented simple bots that can break blocks, attack enemy entities, and build structures.
+\end{itemize}
+{\sl Gameboy Emulator} - https://github.com/mukkid/GoBoy
+\begin{itemize} \itemsep -2pt % Reduce space between items
+    \item An active collaborative project with a friend to implement software emulation of the Gameboy console.
+    \item Completed full emulation of the Z80 CPU
+    \item Adopted and enforced test-driven development and CI practices.
+\end{itemize}
+{\sl Chess AI} - http://github.com/SrsBusiness/Party
+\begin{itemize} \itemsep -2pt % Reduce space between items
+    \item Game state is represented using bitboards and transitions between states are implemented efficiently with bitwise operations and table lookups.
+    \item Uses AI techniques such as alpha-beta pruning, transpositional hash tables, and iterative deepening.
+\end{itemize}
+%{\sl Fast Fourier Transform} - http://github.com/SrsBusiness/FFT
+%\begin{itemize} \itemsep -2pt % Reduce space between items
+%    \item A minimal implementation of the Cooley-Tukey algorithm to compute discrete Fourier transforms.
+%\end{itemize}
+
+\end{resume}
+\end{document}
